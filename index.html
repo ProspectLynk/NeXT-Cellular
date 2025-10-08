@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Proposal: NeXT Cellular & ProspectLynk</title>
+    <title>Proposal: NeXT Cellular & ProspectLynk</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -185,23 +185,23 @@
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             <div class="price-card bg-white p-6 rounded-xl border-2 border-slate-200 transition-all duration-300 cursor-pointer price-card-active" data-package="starter">
                                 <h4 class="text-xl font-bold text-slate-800">⭐ PoC / Starter</h4>
-                                <p class="text-4xl font-bold text-slate-900 mt-4">₹20 <span class="text-lg font-medium text-slate-500">/ Lead</span></p>
+                                <p class="text-4xl font-bold text-slate-900 mt-4">₹25 <span class="text-lg font-medium text-slate-500">/ Lead</span></p>
                                 <p class="text-slate-600 mt-2">1,000 Total Qualified Leads</p>
-                                <p class="font-semibold text-slate-700 mt-4">Total: ₹20,000</p>
-                                <p class="text-sm text-slate-500 mt-4">Ideal for initial market validation and testing target segments.</p>
+                                <p class="font-semibold text-slate-700 mt-4">Total: ₹25,000</p>
+                                <p class="text-sm text-slate-500 mt-4">Initial market validation and testing target segments.</p>
                             </div>
                             <div class="price-card bg-white p-6 rounded-xl border-2 border-slate-200 transition-all duration-300 cursor-pointer" data-package="growth">
                                 <h4 class="text-xl font-bold text-slate-800">🚀 Growth Accelerator</h4>
-                                <p class="text-4xl font-bold text-slate-900 mt-4">₹17.50 <span class="text-lg font-medium text-slate-500">/ Lead</span></p>
+                                <p class="text-4xl font-bold text-slate-900 mt-4">₹22.50 <span class="text-lg font-medium text-slate-500">/ Lead</span></p>
                                 <p class="text-slate-600 mt-2">2,000 Total Qualified Leads</p>
-                                <p class="font-semibold text-slate-700 mt-4">Total: ₹35,000</p>
+                                <p class="font-semibold text-slate-700 mt-4">Total: ₹45,000</p>
                                 <p class="text-sm text-slate-500 mt-4">Expanded coverage across all sub-categories with optimized cost efficiency.</p>
                             </div>
                              <div class="price-card bg-white p-6 rounded-xl border-2 border-slate-200 transition-all duration-300 cursor-pointer" data-package="strategic">
                                 <h4 class="text-xl font-bold text-slate-800">💎 Strategic Partnership</h4>
-                                <p class="text-4xl font-bold text-slate-900 mt-4">₹15 <span class="text-lg font-medium text-slate-500">/ Lead</span></p>
+                                <p class="text-4xl font-bold text-slate-900 mt-4">₹20 <span class="text-lg font-medium text-slate-500">/ Lead</span></p>
                                 <p class="text-slate-600 mt-2">5,000 Total Qualified Leads</p>
-                                <p class="font-semibold text-slate-700 mt-4">Total: ₹75,000</p>
+                                <p class="font-semibold text-slate-700 mt-4">Total: ₹1,00,000</p>
                                 <p class="text-sm text-slate-500 mt-4">Maximum efficiency and deep market penetration for dominance.</p>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                                     </div>
                                     <div class="flex justify-between text-sm">
                                         <span class="text-slate-700">Estimated Sales Time Saved:</span>
-                                        <span id="time-saved" class="font-bold text-teal-600">200+ Hours (5K Lead Tier)</span>
+                                        <span id="time-saved" class="font-bold text-teal-600">40+ Hours (1K Lead Tier)</span>
                                     </div>
                                     <div class="flex justify-between text-sm">
                                         <span class="text-slate-700">ABM Readiness Score:</span>
@@ -321,9 +321,9 @@ document.addEventListener('DOMContentLoaded', function () {
     updateStepDetails('1');
     
     const packageData = {
-        starter: { leads: 1000, costPerLead: 20, timeSaved: 40, accuracy: "95%" },
-        growth: { leads: 2000, costPerLead: 17.5, timeSaved: 100, accuracy: "97%" },
-        strategic: { leads: 5000, costPerLead: 15, timeSaved: 200, accuracy: "98%" }
+        starter: { leads: 1000, costPerLead: 25, timeSaved: 40, accuracy: "95%" },
+        growth: { leads: 2000, costPerLead: 22.5, timeSaved: 100, accuracy: "97%" },
+        strategic: { leads: 5000, costPerLead: 20, timeSaved: 200, accuracy: "98%" }
     };
 
     let selectedPackage = 'starter';
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function () {
             labels: ['PoC / Starter', 'Growth Accelerator', 'Strategic Partnership'],
             datasets: [{
                 label: 'Effective Cost Per Lead (₹)',
-                data: [20, 17.5, 15],
+                data: [25, 22.5, 20],
                 backgroundColor: ['#ccfbf1', '#ccfbf1', '#ccfbf1'],
                 borderColor: ['#99f6e4', '#99f6e4', '#99f6e4'],
                 borderWidth: 2
@@ -424,4 +424,5 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </body>
 </html>
+
 
